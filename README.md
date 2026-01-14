@@ -51,3 +51,63 @@ Output:
 
     Score: 85
     Grade: B
+
+------------------------------------------------------
+
+ Comparison Operators in PHP
+
+Comparison operators are used to compare two values.
+ They return a boolean value (true or false).
+
+ List of comparison operators:
+
+1. Equal (==)
+   
+            // Compares values only (not types)
+            $a = 5;
+            $b = "5";
+            var_dump($a == $b);   // true
+
+2. Identical (===)
+   
+            // Compares value AND type
+            var_dump($a === $b);  // false
+
+3. Not equal (!= or <>)
+   
+            var_dump($a != $b);   // false
+
+4. Not identical (!==)
+   
+            var_dump($a !== $b);  // true
+
+5. Greater than (>)
+   
+            var_dump($a > 3);     // true
+
+6. Less than (<)
+   
+            var_dump($a < 10);    // true
+
+7. Greater than or equal (>=)
+   
+            var_dump($a >= 5);    // true
+
+8. Less than or equal (<=)
+   
+            var_dump($a <= 5);    // true
+
+Spaceship operator (<=>)
+
+        // Returns:
+        //  0  → if both values are equal
+        //  1  → if left is greater
+        // -1  → if left is smaller
+
+example :
+
+        echo 5 <=> 5;   // 0
+        echo 10 <=> 5;  // 1
+        echo 3 <=> 5;   // -1
+
+
